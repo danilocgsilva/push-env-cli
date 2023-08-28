@@ -1,14 +1,9 @@
 import { parse } from 'ts-command-line-args'
-
-
-interface IEnvironmentArguments {
-    name: string,
-    help?: boolean
-}
+import IEnvironmentArguments from './IEnvironmentArguments'
 
 export default class ArgumentParser
 {
-    static getArgs() {
+    public static getArgs() {
         return parse<IEnvironmentArguments>(
             {
                 name: String,
