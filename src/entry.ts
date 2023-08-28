@@ -1,4 +1,4 @@
-import ArgumentParser from "./src/ArgumentsParser"
+import ArgumentParser from "./ArgumentsParser"
 
 const args = ArgumentParser.getArgs();
 
